@@ -39,6 +39,13 @@
     .card p{color:var(--muted);margin-bottom:0}
     .soft{background:var(--soft)}
     .project{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .project-brand{height:94px;display:flex;align-items:center;margin:0 0 18px}
+    .project-brand img{display:block;max-width:100%;object-fit:contain}
+    .project-brand--parkoach img{width:100%;max-width:340px;height:auto}
+    .project-brand--gradvids{gap:14px}
+    .project-brand--gradvids img{width:66px;height:66px}
+    .project-brand--gradvids strong{font-size:1.65rem;letter-spacing:-.02em}
+    .project a[target="_blank"]{font-weight:700;color:var(--accent2)}
     .badge{display:inline-block;font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.09em;color:var(--accent2);background:#eaf2ff;padding:5px 9px;border-radius:999px}
     .mission{font-size:1.15rem;max-width:900px}
     .contact-form{max-width:680px;display:grid;gap:16px}
@@ -120,14 +127,16 @@
       <p class="section-intro">Impact4Kidz projects are vehicles for education, professional experience, and support for educational communities.</p>
       <div class="project">
         <article class="card">
-          <span class="badge">Parkoach</span>
+          <div class="project-brand project-brand--parkoach"><img src="assets/parkoach-wordmark.png" alt="Parkoach" loading="lazy" /></div>
           <h3>Real-world technology experience</h3>
           <p>Parkoach is being developed as a practical technology project that gives students hands-on exposure to modern software development, cloud infrastructure, security, data, and product operations. Its development helps support Impact4Kidz's broader educational and workforce-development mission.</p>
+          <p><a href="https://parkoach.com/" target="_blank" rel="noopener noreferrer">Visit Parkoach website ↗</a></p>
         </article>
         <article class="card">
-          <span class="badge">GradVids</span>
+          <div class="project-brand project-brand--gradvids"><img src="assets/gradvids-icon.png" alt="" loading="lazy" /><strong>GradVids</strong></div>
           <h3>Fundraising with a personal touch</h3>
           <p>GradVids is a DBA of Impact4Kidz and the name of our fundraising platform. It enables supporters to make donations while sending custom, personalized congratulatory video messages to recent graduates. The platform helps educational clubs and programs raise money for their activities.</p>
+          <p><a href="https://gradvids.com/" target="_blank" rel="noopener noreferrer">Visit GradVids website ↗</a></p>
         </article>
       </div>
     </div>
